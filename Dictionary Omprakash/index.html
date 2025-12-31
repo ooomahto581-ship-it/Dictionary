@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dictionary </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-container">
+        <div class="sphere"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1>DICTIONARY</h1>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="wordInput" placeholder="Type a word here...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div id="loader" class="hidden">Searching...</div>
+
+        <div id="resultArea" class="hidden">
+            <div class="card">
+                <div class="word-header">
+                    <div>
+                        <h2 id="wordTitle">Word</h2>
+                        <p id="hindiMean" class="hindi-text"></p>
+                    </div>
+                    <button id="audioBtn" class="icon-btn"><i class="fas fa-volume-up"></i></button>
+                </div>
+
+                <div id="definitionList" class="definitions">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
