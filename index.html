@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dictionary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs"></div>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-spell-check"></i>Dictionary</h1>
+            <div class="search-box">
+                <input type="text" id="word-input" placeholder="Search a word (e.g., 'Success')..." autocomplete="off">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <div id="result-container" class="result-card"></div>
+        <div id="error-message" class="error-box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
